@@ -6,57 +6,156 @@
     background-color: rgba(117, 119, 122, 0.95);
     margin: 0em;
     padding: 0em;
-    max-width: 20em;
-    min-width: 16em;
-    width: 16em;
-    max-height: 28em;
-    min-height: 22em;
-    height: 24em;
+    max-width: 28em;
+    min-width: 22em;
+    width: 24em;
+    max-height: 36em;
+    min-height: 30em;
+    height: 32em;
 }
 
 
 /* MENU HEAD */
 
 .menu-head-display {
-    background-color: rgba(28, 92, 165, 0.95);
+    background-color: rgb(224, 120, 0);
     padding: 0.5em;
     width: inherit !important;
     height: 5em !important;
+    display: inline-flex;
 }
 
 .menu-head-icon {
-    padding: 0.4em;
-    background-color: rgb(36, 118, 156);
+    padding: 0.65em;
+    background-color: rgb(0, 0, 0);
     color: white;
-    width: 4em !important;
-    height: 4em !important;
+    width: 3em !important;
+    font-size: 1.3em;
+    margin-right: 0.5em;
 }
 
 .menu-head-add-display {
-    width: 11em !important;
-    height: 4em !important;
+    background-color: rgb(224, 120, 0);
+    padding: 0.25em;
+    width: 16em;
 }
 
 .menu-head-add-input {
-    height: 2.5em !important;
-    width: 6em !important;
+    height: 1.8em;
+    width: 14em;
+    padding: 0.1em;
+    border-radius: 0.2em;
 }
 
-.menu-head-add-button {
-    height: 2.5em !important;
-    width: 2em !important;
+.menu-head-add-buttons {
+    margin: 0.1em;
+}
+
+.menu-head-button-add {
+    background-color: rgb(9, 156, 9);
+    color: rgb(11, 119, 11);
+}
+
+.menu-head-button-test {
+    background-color: rgba(251, 255, 0, 0.986);
+    color: rgb(151, 165, 24);
+}
+
+.menu-head-add-buttons>button {
+    border: 0px;
+    border-radius: 0.2em;
+    margin: 0.1em;
+    padding: 0.25em 0.8em;
 }
 
 
 /* MENU BODY */
 
 .menu-body-display {
-    background-color: rgba(101, 140, 184, 0.95);
-    padding: 0.35em;
+    background-color: rgb(173, 128, 76);
+    padding: 0.5em;
+    width: inherit !important;
+    height: 5em !important;
+    display: inline-flex;
 }
 
 html,
 body {
     margin: 0em;
     padding: 0em;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 26px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    border: 0px;
+    border-radius: 34px;
+    background-color: rgb(224, 120, 0);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(10, 22, 32);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border: 0px;
+    border-radius: 34px;
+    background-color: rgb(133, 123, 112);
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
 }
