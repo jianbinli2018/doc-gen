@@ -1,0 +1,62 @@
+.menu-popup {
+    margin: 5px;
+}
+
+.menu-display {
+    background-color: rgba(117, 119, 122, 0.95);
+    margin: 0em;
+    padding: 0em;
+    max-width: 20em;
+    min-width: 16em;
+    width: 16em;
+    max-height: 28em;
+    min-height: 22em;
+    height: 24em;
+}
+
+
+/* MENU HEAD */
+
+.menu-head-display {
+    background-color: rgba(28, 92, 165, 0.95);
+    padding: 0.5em;
+    width: inherit !important;
+    height: 5em !important;
+}
+
+.menu-head-icon {
+    padding: 0.4em;
+    background-color: rgb(36, 118, 156);
+    color: white;
+    width: 4em !important;
+    height: 4em !important;
+}
+
+.menu-head-add-display {
+    width: 11em !important;
+    height: 4em !important;
+}
+
+.menu-head-add-input {
+    height: 2.5em !important;
+    width: 6em !important;
+}
+
+.menu-head-add-button {
+    height: 2.5em !important;
+    width: 2em !important;
+}
+
+
+/* MENU BODY */
+
+.menu-body-display {
+    background-color: rgba(101, 140, 184, 0.95);
+    padding: 0.35em;
+}
+
+html,
+body {
+    margin: 0em;
+    padding: 0em;
+}

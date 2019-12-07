@@ -1,0 +1,29 @@
+{
+    "name": "Slick Jim",
+    "version": "1.0",
+    "description": "Identify information based on provided regular expressions",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "options_page": "./config/config.html",
+    "background": {
+        "scripts": ["doc-gen.js"],
+        "persistent": true
+    },
+    "page_action": {
+        "default_popup": "./menu/menu.html",
+        "default_icon": {
+            "16": "./resource/img/doc-gen-16.png",
+            "32": "./resource/img/doc-gen-32.png",
+            "64": "./resource/img/doc-gen-64.png",
+            "96": "./resource/img/doc-gen-96.png",
+            "128": "./resource/img/doc-gen-128.png"
+        }
+    },
+    "icons": {
+        "16": "./resource/img/doc-gen-16.png",
+        "32": "./resource/img/doc-gen-32.png",
+        "64": "./resource/img/doc-gen-64.png",
+        "96": "./resource/img/doc-gen-96.png",
+        "128": "./resource/img/doc-gen-128.png"
+    },
+    "manifest_version": 2
+}
