@@ -27,7 +27,7 @@
 
 .menu-head-icon {
     padding: 0.65em;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 166, 0);
     color: white;
     width: 3em !important;
     font-size: 1.3em;
@@ -61,10 +61,10 @@
     color: rgb(151, 165, 24);
 }
 
-.menu-head-add-buttons>button {
+button {
     border: 0px;
     border-radius: 0.2em;
-    margin: 0.1em;
+    margin: 0.35em;
     padding: 0.25em 0.8em;
 }
 
@@ -73,10 +73,13 @@
 
 .menu-body-display {
     background-color: rgb(173, 128, 76);
-    padding: 0.5em;
-    width: inherit !important;
-    height: 5em !important;
+    width: inherit;
+    height: inherit !important;
     display: inline-flex;
+}
+
+.menu-content-display {
+    width: inherit;
 }
 
 html,
@@ -84,78 +87,48 @@ body {
     margin: 0em;
     padding: 0em;
     font-family: 'Roboto', sans-serif;
+    border: 0px;
 }
 
 ul {
     list-style: none;
+    margin: 0em;
+    padding: 0em;
+    width: inherit !important;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 38px;
-    height: 26px;
+li {
+    border-bottom: 1px solid black;
 }
 
-
-/* Hide default HTML checkbox */
-
-.switch input {
+.span-option {
+    display: block;
+    width: inherit;
+    visibility: hidden;
     opacity: 0;
-    width: 0;
+    transition: visibiltiy 0s linear 300ms, opacity 2s, height 1s, padding 1s;
     height: 0;
 }
 
-
-/* The slider */
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+li:hover>.span-option {
+    width: inherit;
+    padding-top: 0.5em;
+    transition: visiblity 0s linear 0s, opacity 2s, height 1s, padding 1s;
+    opacity: 1;
+    visibility: visible;
+    height: inherit;
+    background-color: rgb(97, 75, 49);
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+.span-option>button {
+    margin-left: 1em;
 }
 
-input:checked+.slider {
-    border: 0px;
-    border-radius: 34px;
-    background-color: rgb(224, 120, 0);
+.switch-label {
+    font-size: 20px;
+    margin-left: 1em;
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px rgb(10, 22, 32);
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border: 0px;
-    border-radius: 34px;
-    background-color: rgb(133, 123, 112);
-}
-
-.slider.round:before {
-    border-radius: 50%;
-    background-color: rgb(0, 0, 0);
+label {
+    margin: 0;
 }
